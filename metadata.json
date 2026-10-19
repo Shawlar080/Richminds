@@ -1,0 +1,8 @@
+{
+  "name": "Richminds International Limited - Authentic African Foods UK",
+  "description": "Richminds International Limited is an African food import and redistribution company based in Kingston upon Hull, UK. Connecting authentic African food producers with UK households, wholesalers, and retailers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
