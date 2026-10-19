@@ -120,3 +120,24 @@ npm run lint
 npm run build
 npm start
 ```
+
+---
+
+## 7. Deploying to Vercel
+
+The repository is pre-configured for one-click Vercel deployments:
+
+1. **Automatic Dependency Resolution:**
+   - An `.npmrc` file is included in the project root with `legacy-peer-deps=true`.
+   - A `vercel.json` configuration is included specifying `installCommand: "npm install --legacy-peer-deps"`.
+   - This resolves the npm upstream dependency conflict automatically during Vercel's build step.
+
+2. **Serverless API Routes:**
+   - The `/api/enquiries` and `/api/health` endpoints are set up in `/api/*.ts` as Vercel Serverless Functions.
+
+3. **Vercel Project Settings (Optional Environment Variables):**
+   - In your Vercel Dashboard -> **Settings** -> **Environment Variables**, you can add:
+     - `CONTACT_EMAIL`: `admin@richmindsinternational.com.ng`
+     - `RESEND_API_KEY`: *(Your Resend API Key if using live transactional email)*
+     - `CONTACT_FROM_EMAIL`: `onboarding@resend.dev` (or your verified domain)
+
